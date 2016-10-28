@@ -16,5 +16,9 @@ public class Service {
 	public void setPlanType(String planType) {
 		this.planType = planType;
 	}
+	@Override
+	public String toString() {
+		return "Service [serviceNm=" + serviceNm + ", planType=" + planType + "]";
+	}
 	
 }

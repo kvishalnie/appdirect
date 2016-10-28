@@ -20,32 +20,8 @@ public class DataService {
 	
 	private static List<Service> services = new ArrayList<>();
 	
+	static {
 
-	public static Map<Integer, Profile> getProfiles() {
-		return profiles;
-	}
-
-	public static void setProfiles(Map<Integer, Profile> profiles) {
-		DataService.profiles = profiles;
-	}
-
-	public static Map<Integer, Subscription> getSubscriptions() {
-		return subscriptions;
-	}
-
-	public static void setSubscriptions(Map<Integer, Subscription> subscriptions) {
-		DataService.subscriptions = subscriptions;
-	}
-
-	public static Map<Integer, List<Integer>> getProfileSubsMap() {
-		return profileSubsMap;
-	}
-
-	public static void setProfileSubsMap(Map<Integer, List<Integer>> profileSubsMap) {
-		DataService.profileSubsMap = profileSubsMap;
-	}
-
-	public static List<Service> getServices() {
 		Service service1 = new Service();
 		service1.setServiceNm("BroadbandService");
 		service1.setPlanType("Gold");
@@ -73,6 +49,33 @@ public class DataService {
 		services.add(service3);
 		services.add(service4);
 		services.add(service5);
+	}
+
+	public static Map<Integer, Profile> getProfiles() {
+		return profiles;
+	}
+
+	public static void setProfiles(Map<Integer, Profile> profiles) {
+		DataService.profiles = profiles;
+	}
+
+	public static Map<Integer, Subscription> getSubscriptions() {
+		return subscriptions;
+	}
+
+	public static void setSubscriptions(Map<Integer, Subscription> subscriptions) {
+		DataService.subscriptions = subscriptions;
+	}
+
+	public static Map<Integer, List<Integer>> getProfileSubsMap() {
+		return profileSubsMap;
+	}
+
+	public static void setProfileSubsMap(Map<Integer, List<Integer>> profileSubsMap) {
+		DataService.profileSubsMap = profileSubsMap;
+	}
+
+	public static List<Service> getServices() {
 		return services;
 	}
 
